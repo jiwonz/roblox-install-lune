@@ -2,7 +2,7 @@
 Lune library to locate the user's Roblox installation. [roblox-install](https://github.com/Kampfkarren/roblox-install) luau port.
 
 ## Installation
-Install via pesde
+Install via [pesde](https://pesde.daimond113.com/packages/jiwonz/roblox_install)
 ```sh
 pesde add jiwonz/roblox_install
 ```
