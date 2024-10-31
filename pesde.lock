@@ -1,0 +1,88 @@
+name = "jiwonz/roblox_install"
+version = "0.1.0"
+target = "lune"
+
+[graph."jiwonz/dirs"."0.1.0 lune"]
+direct = ["dirs", { name = "jiwonz/dirs", version = "^0.1.0" }]
+ty = "standard"
+
+[graph."jiwonz/dirs"."0.1.0 lune".target]
+environment = "lune"
+lib = "src/init.luau"
+
+[graph."jiwonz/dirs"."0.1.0 lune".dependencies]
+"jiwonz/pathfs" = ["0.1.0 lune", "pathfs"]
+
+[graph."jiwonz/dirs"."0.1.0 lune".pkg_ref]
+ref_ty = "pesde"
+name = "jiwonz/dirs"
+version = "0.1.0"
+index_url = "https://github.com/daimond113/pesde-index"
+
+[graph."jiwonz/dirs"."0.1.0 lune".pkg_ref.dependencies]
+pathfs = [{ name = "jiwonz/pathfs", version = "^0.1.0", index = "https://github.com/daimond113/pesde-index" }, "standard"]
+
+[graph."jiwonz/dirs"."0.1.0 lune".pkg_ref.target]
+environment = "lune"
+lib = "src/init.luau"
+
+[graph."jiwonz/luau_regexp"."0.1.0 luau"]
+ty = "standard"
+
+[graph."jiwonz/luau_regexp"."0.1.0 luau".target]
+environment = "luau"
+lib = "src/Regexp.global.luau"
+
+[graph."jiwonz/luau_regexp"."0.1.0 luau".pkg_ref]
+ref_ty = "pesde"
+name = "jiwonz/luau_regexp"
+version = "0.1.0"
+index_url = "https://github.com/daimond113/pesde-index"
+
+[graph."jiwonz/luau_regexp"."0.1.0 luau".pkg_ref.target]
+environment = "luau"
+lib = "src/Regexp.global.luau"
+
+[graph."jiwonz/pathfs"."0.1.0 lune"]
+direct = ["pathfs", { name = "jiwonz/pathfs", version = "^0.1.0" }]
+ty = "standard"
+
+[graph."jiwonz/pathfs"."0.1.0 lune".target]
+environment = "lune"
+lib = "init.luau"
+
+[graph."jiwonz/pathfs"."0.1.0 lune".pkg_ref]
+ref_ty = "pesde"
+name = "jiwonz/pathfs"
+version = "0.1.0"
+index_url = "https://github.com/daimond113/pesde-index"
+
+[graph."jiwonz/pathfs"."0.1.0 lune".pkg_ref.target]
+environment = "lune"
+lib = "init.luau"
+
+[graph."jiwonz/winreg"."0.1.0 lune"]
+direct = ["winreg", { name = "jiwonz/winreg", version = "^0.1.0" }]
+ty = "standard"
+
+[graph."jiwonz/winreg"."0.1.0 lune".target]
+environment = "lune"
+lib = "init.luau"
+
+[graph."jiwonz/winreg"."0.1.0 lune".dependencies]
+"jiwonz/luau_regexp" = ["0.1.0 luau", "luau_regexp"]
+"jiwonz/pathfs" = ["0.1.0 lune", "pathfs"]
+
+[graph."jiwonz/winreg"."0.1.0 lune".pkg_ref]
+ref_ty = "pesde"
+name = "jiwonz/winreg"
+version = "0.1.0"
+index_url = "https://github.com/daimond113/pesde-index"
+
+[graph."jiwonz/winreg"."0.1.0 lune".pkg_ref.dependencies]
+luau_regexp = [{ name = "jiwonz/luau_regexp", version = "^0.1.0", index = "https://github.com/daimond113/pesde-index", target = "luau" }, "standard"]
+pathfs = [{ name = "jiwonz/pathfs", version = "^0.1.0", index = "https://github.com/daimond113/pesde-index" }, "standard"]
+
+[graph."jiwonz/winreg"."0.1.0 lune".pkg_ref.target]
+environment = "lune"
+lib = "init.luau"
